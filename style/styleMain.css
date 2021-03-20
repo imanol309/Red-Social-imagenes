@@ -1,5 +1,5 @@
-@import url("/style/iniciar.css");
-@import url("/style/login.css");
+@import url("./style/iniciar.css");
+@import url("./style/login.css");
 
 *{
     margin: 0;
