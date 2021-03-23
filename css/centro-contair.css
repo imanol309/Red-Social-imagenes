@@ -1,0 +1,42 @@
+.centro-contair{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    transition: 2s;
+}
+
+.img-2{
+    position: relative;
+    height: 105px;
+    width: 100px;
+    left: 1%;
+    top: 10px;
+}
+
+.img-3{
+    position: relative;
+    float: right;
+    height: 65px;
+    width: 55px;
+    left: 18%;
+    transform: rotate(50deg);
+    top: 2%;
+}
+
+/* class que va ser agregada con un clip */
+.img-3-3{
+    height: 85px;
+    width: 75px;
+    transform: rotate(90deg);
+    left: 25%;
+}
+
+
+.centro-contair1{
+    position: relative;
+    height: 86vh;
+    top: 8%;
+    width: 65%;
+}
+

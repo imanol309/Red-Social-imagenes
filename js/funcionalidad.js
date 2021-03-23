@@ -27,48 +27,27 @@ let crearCuenta = document.querySelector(".usuario-img22")
 
 // VARIABLE VACIA 
 
-
-
-// let campos = [nombre.value,apellido.value,numero.value,edad.value,email.value,password1.value,passwordOficial.value]
-
-// VERIFICAR SI EL CORREO Y LA CONTRASENA ES CORRECTA
 var email1Vacio;
 var passwordOficialVacio;
 
-function resgistro() {
+// let campos = [nombre.value,apellido.value,numero.value,edad.value,email.value,password1.value,passwordOficial.value]
 
 
-    img1.addEventListener("click", () =>{
-        console.log(email1Vacio,passwordOficialVacio)
-        if(correo.value === "imanol@gmail.com" && password.value === "imanol75" || 
-        correo.value === email1Vacio && password.value === passwordOficialVacio){
-            correo.value = "";
-            password.value = "";
-            window.location.href = "/index2.html"
-        }else{
-            correo.value = "";
-            password.value = "";
-            alert("CUENTA INCORRECTA")
-        }
-    
-    })
 
-    crearCuenta.addEventListener("click", () => {
-        let ValorPasswordOficial = passwordOficial.value
-        if (email.value === "" && passwordOficial.value === ""){
-            alert("LLENA LOS DATOS MAS IMPORTANTES QUE SON EMAIL Y PASSWORD 'POR FAVOR' ")}
-        if (email.value.indexOf("@gmail.com")!= -1 && ValorPasswordOficial.length > 7){
-            email.value = email1Vacio
-            passwordOficial.value = passwordOficialVacio
-            alert("YA ESTAS REGISTRADO, YA PUEDES INGRESAR TU CUENTA NUEVA")
-        }else {
-            alert("LLENA LOS DATOS MAS IMPORTANTES QUE SON EMAIL Y PASSWORD 'CORRECTAMENTE'")
-        }
-    })
-    
-}
+// VERIFICAR SI EL CORREO Y LA CONTRASENA ES CORRECTA
 
-resgistro()
+crearCuenta.addEventListener("click", () => {
+    let ValorPasswordOficial = passwordOficial.value
+    if (email.value === "" && passwordOficial.value === ""){
+        alert("LLENA LOS DATOS MAS IMPORTANTES QUE SON EMAIL Y PASSWORD 'POR FAVOR' ")}
+    if (email.value.indexOf("@gmail.com")!= -1 && ValorPasswordOficial.length > 7){
+        email.value = email1Vacio
+        passwordOficial.value = passwordOficialVacio
+        alert("YA ESTAS REGISTRADO, YA PUEDES INGRESAR TU CUENTA NUEVA")
+    }else {
+        alert("LLENA LOS DATOS MAS IMPORTANTES QUE SON EMAIL Y PASSWORD 'CORRECTAMENTE'")
+    }
+})
 
 //ACTIVAR LAS LINEAS DE LAS PALABRAS EMAIL Y PASSWORD
 
@@ -96,6 +75,7 @@ img2.addEventListener("click", () =>{
     form2.className += " usuario-contairn2"
 })
 
+
 // HACER QUE LOS USUARIOS NO DEJEN NINGUN CAMPO VACIO
 
 // function noCamposVacios(){
@@ -112,5 +92,20 @@ img2.addEventListener("click", () =>{
 
 
 // CREAR NUEVA CUENTA O REGISTRASE
+
+img1.addEventListener("click", () =>{
+    console.log(email1Vacio,passwordOficialVacio)
+    if(correo.value === "imanol@gmail.com" && password.value === "imanol75" || 
+    correo.value === email1Vacio && password.value === passwordOficialVacio){
+        correo.value = "";
+        password.value = "";
+        window.location.href = "/index2.html"
+    }else{
+        correo.value = "";
+        password.value = "";
+        alert("CUENTA INCORRECTA")
+    }
+
+})
 
 
